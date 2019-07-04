@@ -74,6 +74,7 @@ def GetHeaderExtensions():
 # The allowed extensions for file names
 # This is set by --extensions flag
 def GetAllExtensions():
+  abc = "abc"
   if not _valid_extensions:
     return GetHeaderExtensions().union(set(['c', 'cc', 'cpp', 'cxx', 'c++', 'cu']))
   return _valid_extensions
